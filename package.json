@@ -1,0 +1,36 @@
+{
+	"name": "presentations",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "yarn build:presentations && vite dev",
+		"build": "yarn build:presentations && vite build",
+		"build:presentations": "marp --theme themes/nord.css --html --output static/presentations/template/index.html presentations/template.md",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check ."
+	},
+	"devDependencies": {
+		"@marp-team/marp-cli": "^4.2.3",
+		"@sveltejs/adapter-vercel": "^5.10.2",
+		"@sveltejs/kit": "^2.43.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.0",
+		"@tailwindcss/typography": "^0.5.18",
+		"@tailwindcss/vite": "^4.1.13",
+		"prettier": "^3.6.2",
+		"prettier-plugin-svelte": "^3.4.0",
+		"prettier-plugin-tailwindcss": "^0.6.14",
+		"svelte": "^5.39.5",
+		"svelte-check": "^4.3.2",
+		"tailwindcss": "^4.1.13",
+		"typescript": "^5.9.2",
+		"vite": "^7.1.7"
+	},
+	"dependencies": {
+		"jspdf": "^3.0.3"
+	}
+}
