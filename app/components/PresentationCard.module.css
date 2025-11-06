@@ -1,0 +1,151 @@
+.cardButton {
+  width: 100%;
+  max-width: 21rem;
+  border: none;
+  background: transparent;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cardButton:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 18px;
+}
+
+.cardButton:hover {
+  transform: translateY(-2px);
+}
+
+.cardButton:hover .card {
+  border-color: rgba(136, 192, 208, 0.6);
+  box-shadow: 0 0 40px -20px var(--accent);
+}
+
+.cardButton:hover .thumbnailImage {
+  transform: scale(1.05);
+}
+
+.active {
+  box-shadow: 0 0 0 2px rgba(136, 192, 208, 0.5);
+  border-radius: 18px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: rgba(59, 66, 82, 0.7);
+  border: 1px solid rgba(76, 86, 106, 0.6);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 40px -30px var(--accent);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  background: rgba(59, 66, 82, 0.9);
+}
+
+.thumbnailImage {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.badge {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 4px;
+  font-family: var(--font-geist-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid rgba(76, 86, 106, 0.7);
+  color: rgba(216, 222, 233, 0.55);
+  background: rgba(46, 52, 64, 0.8);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--foreground);
+}
+
+.date {
+  margin-top: 0.35rem;
+  font-family: var(--font-geist-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(216, 222, 233, 0.55);
+}
+
+.description {
+  color: rgba(216, 222, 233, 0.85);
+  line-height: 1.6;
+  font-size: 0.92rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-geist-mono);
+  font-size: 0.7rem;
+  color: rgba(216, 222, 233, 0.6);
+}
+
+.footerFormat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footerFormatDot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: rgba(136, 192, 208, 0.7);
+  transition: background 0.2s ease;
+}
+
+.cardButton:hover .footerFormatDot {
+  background: var(--accent);
+}
+
+@media (min-width: 640px) {
+  .cardButton {
+    max-width: 23rem;
+  }
+
+  .content {
+    padding: 1.25rem 1.5rem 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+}

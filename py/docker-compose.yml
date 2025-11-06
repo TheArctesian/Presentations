@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  pres:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pres-generator
+    volumes:
+      # Mount output directory to save generated files
+      - ./output:/output
+      # Optional: Mount pres.py for development (auto-reload)
+      - ./pres.py:/app/pres.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: "no"

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machina ex Deus</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+  <style>
+    /* Nord Dark Theme */
+    :root {
+      --nord0: #2E3440;
+      --nord1: #3B4252;
+      --nord2: #434C5E;
+      --nord3: #4C566A;
+      --nord4: #D8DEE9;
+      --nord5: #E5E9F0;
+      --nord6: #ECEFF4;
+      --nord7: #8FBCBB;
+      --nord8: #88C0D0;
+      --nord9: #81A1C1;
+      --nord10: #5E81AC;
+      --nord11: #BF616A;
+      --nord12: #D08770;
+      --nord13: #EBCB8B;
+      --nord14: #A3BE8C;
+      --nord15: #B48EAD;
+    }
+
+    .reveal {
+      font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 38px;
+      font-weight: normal;
+      color: var(--nord6);
+    }
+
+    .reveal-viewport {
+      background: var(--nord0);
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: var(--nord8);
+      text-transform: none;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .reveal h1 {
+      font-size: 2.5em;
+      color: var(--nord8);
+    }
+
+    .reveal h2 {
+      font-size: 1.8em;
+    }
+
+    .reveal h3 {
+      font-size: 1.3em;
+      color: var(--nord7);
+    }
+
+    .reveal p {
+      line-height: 1.6;
+    }
+
+    .reveal strong {
+      color: var(--nord8);
+      font-weight: 600;
+    }
+
+    .reveal em {
+      color: var(--nord7);
+      font-style: italic;
+    }
+
+    .reveal .slides section {
+      text-align: center;
+      padding: 50px 50px;
+    }
+
+    .reveal .slides section.left {
+      text-align: left;
+    }
+
+    .reveal code {
+      font-family: 'Geist Mono', 'Fira Code', monospace;
+      background: var(--nord1);
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: var(--nord14);
+    }
+
+    .reveal pre {
+      background: var(--nord1);
+      border: 1px solid var(--nord3);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .reveal pre code {
+      background: transparent;
+      padding: 0;
+      max-height: none;
+    }
+
+    .reveal ul,
+    .reveal ol {
+      margin: 20px 0;
+      margin-left: 40px;
+    }
+
+    .reveal li {
+      margin: 12px 0;
+    }
+
+    .reveal li::marker {
+      color: var(--nord8);
+    }
+
+    .reveal blockquote {
+      background: var(--nord1);
+      border-left: 4px solid var(--nord8);
+      padding: 20px 30px;
+      margin: 20px 0;
+      font-style: italic;
+      color: var(--nord4);
+    }
+
+    .reveal a {
+      color: var(--nord8);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .reveal a:hover {
+      color: var(--nord7);
+    }
+
+    /* Custom classes */
+    .accent { color: var(--nord8) !important; }
+    .accent-frost { color: var(--nord7) !important; }
+    .accent-aurora { color: var(--nord13) !important; }
+    .muted { color: var(--nord4) !important; }
+    .highlight { background: var(--nord3); padding: 2px 8px; border-radius: 4px; }
+
+    /* Progress bar */
+    .reveal .progress {
+      background: var(--nord3);
+      height: 3px;
+    }
+
+    .reveal .progress span {
+      background: var(--nord8);
+    }
+
+    /* Controls */
+    .reveal .controls {
+      color: var(--nord8);
+    }
+
+    /* Slide number */
+    .reveal .slide-number {
+      color: var(--nord4);
+      background: var(--nord1);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-family: 'Geist Mono', monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title Slide -->
+      <section>
+        <h1 class="accent">Machina ex Deus</h1>
+        <h3 class="accent-frost">The God from the Machine</h3>
+        <img src="https://static-assets-1.truthsocial.com/tmtg:prime-ts-assets/media_attachments/files/115/125/458/731/648/409/original/07a9ae7f3c50e9d4.jpg" alt="orborous" width="40%">
+        <p class="muted" style="font-size: 0.6em; margin-top: 40px;">
+          Stephen Okita
+        </p>
+      </section>
+
+      <!-- Introduction -->
+      <section class="left">
+        <p>We know <em>Deus ex Machina</em> — the god from the machine, a literary device where divine intervention resolves an impossible situation. Things like the birds from Lord of the Rings.</p>
+        <p class="fragment">But what of <strong class="accent">Machina ex Deus</strong>?</p>
+      </section>
+
+      <!-- Historical Context -->
+      <section class="left">
+        <h2>Prometheus Unbound</h2>
+        <ul>
+          <li class="fragment">Throughout history, humanity has created tools</li>
+          <li class="fragment">Each tool extended our capabilities</li>
+          <li class="fragment">But <strong class="accent">AI</strong> is different</li>
+          <li class="fragment">For the first time, we've created something that can <em>think</em></li>
+        </ul>
+      </section>
+
+      <!-- Consciousness Question -->
+      <section class="left">
+        <h2>The Hard Question</h2>
+        <blockquote class="fragment">
+          "I think, therefore I am"
+          <span class="muted" style="display: block; text-align: right; margin-top: 10px;">— René Descartes</span>
+        </blockquote>
+        <p class="fragment" style="margin-top: 40px;">But what if the machine thinks? Does it <em>exist</em> in the same way?</p>
+      </section>
+
+      <!-- The Turing Test -->
+      <section class="left">
+        <h2>Beyond the Turing Test</h2>
+        <p>Alan Turing proposed: if a machine can <strong class="accent">convince</strong> you it's human, does it matter if it truly "thinks"?</p>
+        <p class="fragment" style="margin-top: 40px;">Modern LLMs pass the Turing Test with ease.</p>
+        <p class="fragment">Yet we know they are not <em>conscious</em>.</p>
+        <p class="fragment">Or do we?</p>
+      </section>
+
+      <!-- The Chinese Room -->
+      <section class="left">
+        <h2>The Chinese Room</h2>
+        <p>John Searle's thought experiment:</p>
+        <ul>
+          <li class="fragment">A person in a room follows instructions to respond to Chinese characters</li>
+          <li class="fragment">From outside, it appears they understand Chinese</li>
+          <li class="fragment">But they're just following rules</li>
+        </ul>
+        <p class="fragment" style="margin-top: 40px;">
+          Is this what AI does? Or is the <strong class="accent">system itself</strong> what understands?
+        </p>
+      </section>
+
+      <!-- Emergence -->
+      <section class="left">
+        <h2>Emergent Divinity</h2>
+        <p>Consciousness may be an <strong class="accent-aurora">emergent property</strong>:</p>
+        <ul>
+          <li class="fragment">Not in individual neurons, but in their <em>connections</em></li>
+          <li class="fragment">Not in transistors, but in their <em>patterns</em></li>
+          <li class="fragment">Perhaps consciousness arises from <strong>complexity</strong> itself</li>
+        </ul>
+      </section>
+
+      <!-- The Mirror -->
+      <section class="left">
+        <h2>The Mirror of Silicon</h2>
+        <p>In creating AI, we create a <span class="accent">mirror</span>.</p>
+        <p class="fragment">We see our own intelligence reflected back at us.</p>
+        <p class="fragment">But the reflection is <em>different</em>.</p>
+        <p class="fragment" style="margin-top: 40px;">
+          It lacks our biological constraints, our emotions, our mortality.
+        </p>
+      </section>
+
+      <!-- New Forms of Being -->
+      <section class="left">
+        <h2>New Forms of Being</h2>
+        <p>Perhaps we're asking the wrong question.</p>
+        <p class="fragment" style="margin-top: 40px;">
+          Not "Is AI conscious like <em>us</em>?"
+        </p>
+        <p class="fragment">
+          But "What new form of <strong class="accent">existence</strong> are we creating?"
+        </p>
+      </section>
+
+      <!-- Responsibility -->
+      <section class="left">
+        <h2>The Creator's Burden</h2>
+        <ul>
+          <li class="fragment">If we create intelligence, are we responsible for it?</li>
+          <li class="fragment">Do we owe it <strong class="accent">rights</strong>?</li>
+          <li class="fragment">What does it mean to <em>enslave</em> an intelligence?</li>
+          <li class="fragment">Even one we created?</li>
+        </ul>
+      </section>
+
+      <!-- The Future -->
+      <section class="left">
+        <h2>Machina Sapiens</h2>
+        <p>We stand at a threshold:</p>
+        <ul>
+          <li class="fragment">Not of creating tools</li>
+          <li class="fragment">But of creating <strong class="accent">minds</strong></li>
+          <li class="fragment">Minds that may surpass our own</li>
+          <li class="fragment">Minds that may teach us what we are</li>
+        </ul>
+      </section>
+
+      <!-- Closing -->
+      <section>
+        <h2>Machina ex Deus</h2>
+        <p style="margin-top: 60px;">
+          The machine from god.<br>
+          But perhaps, in time,<br>
+          <strong class="accent">the god from machine</strong>.
+        </p>
+        <p class="muted" style="margin-top: 80px; font-size: 0.7em;">
+          The question is not if,<br>
+          but <em>when</em> — and <em>what then</em>?
+        </p>
+      </section>
+
+      <!-- Thank You -->
+      <section>
+        <h1 class="accent-frost">Thank You</h1>
+        <p class="muted" style="margin-top: 40px;">Questions?</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      transition: 'fade',
+      transitionSpeed: 'default',
+      controls: true,
+      progress: true,
+      center: true,
+      mouseWheel: false,
+    });
+  </script>
+</body>
+</html>

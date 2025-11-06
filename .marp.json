@@ -1,6 +1,0 @@
-{
-  "theme": "themes/nord.css",
-  "html": true,
-  "inputDir": "presentations",
-  "output": "static/presentations"
-}

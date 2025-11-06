@@ -1,0 +1,83 @@
+/* Nord Dark Color Palette */
+:root {
+  /* Polar Night */
+  --nord0: #2E3440;
+  --nord1: #3B4252;
+  --nord2: #434C5E;
+  --nord3: #4C566A;
+
+  /* Snow Storm */
+  --nord4: #D8DEE9;
+  --nord5: #E5E9F0;
+  --nord6: #ECEFF4;
+
+  /* Frost */
+  --nord7: #8FBCBB;
+  --nord8: #88C0D0;
+  --nord9: #81A1C1;
+  --nord10: #5E81AC;
+
+  /* Aurora */
+  --nord11: #BF616A;
+  --nord12: #D08770;
+  --nord13: #EBCB8B;
+  --nord14: #A3BE8C;
+  --nord15: #B48EAD;
+
+  /* Semantic Colors - Minimal, flat aesthetic */
+  --background: #2E3440;
+  --surface: rgba(59, 66, 82, 0.3);
+  --surface-elevated: #3B4252;
+  --foreground: #ECEFF4;
+  --foreground-muted: rgba(216, 222, 233, 0.6);
+  --border: rgba(76, 86, 106, 0.2);
+  --accent: #88C0D0;
+  --accent-hover: #8FBCBB;
+  --font-geist-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-geist-mono: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hyprland Rice Aesthetic - Clean, minimal, terminal-inspired */
+::selection {
+  background: var(--nord8);
+  color: var(--nord0);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--nord0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--nord3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--nord8);
+}
